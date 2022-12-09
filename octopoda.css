@@ -1,0 +1,108 @@
+/*
+creaturing
+https://octopus.boo
+https://s9a.page/sea
+*/
+
+.free { margin: auto }
+.beak { font-size: max(2ex, 8vmax) }
+.pump { padding-block: 1ex }
+.play { padding-block: 6ex 3ex }
+.prey { padding-block: 3ex 6ex }
+.pray { padding-block: 1ex 8ex }
+.pool { padding-block: 8ex 1ex }
+.loop { padding-block: 6ex 3ex }
+.poke { padding-block: 0 9ex }
+.punk { padding-block: 4.5ex }
+.camo {
+  contain: layout;
+  display: flex;
+  flex-flow: wrap;
+  margin: auto;
+  padding: 0;
+}
+
+.eye {
+  flex-basis: 50%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 1ex;
+}
+
+.triad {
+  flex-basis: 33.333333%;
+  text-align: center;
+  box-sizing: border-box;
+  padding-inline: 1ex;
+}
+
+@media (color) {
+  :root {
+    --oil: honeydew;
+    --ink: #030209;
+  }
+  .amber { --oil: lightsalmon }
+  .blush { --oil: hotpink }
+  .breeze { --oil: mistyrose }
+  .foam { --oil: darkturquoise }
+  .fume { --oil: #d0e }
+  .gel { --oil: mediumslateblue }
+  .glow { --oil: #ec0 }
+  .gush { --oil: violet }
+  .lava { --oil: chocolate }
+  .sand { --oil: navajowhite }
+  .storm { --oil: gainsboro }
+  .tide { --oil: deepskyblue }
+  .orca { --oil: mediumorchid }
+  .love { --oil: #bae }
+}
+
+@media (prefers-contrast: less) {
+  .blush { --oil: lightpink }
+  .breeze { --oil: bisque }
+  .fume { --oil: #c0d }
+  .sand { --oil: peachpuff }
+  .storm { --oil: silver }
+  .tide { --oil: dodgerblue }
+  .amber { --oil: salmon }
+}
+
+@media (prefers-contrast: more) {
+  .foam { --oil: turquoise }
+  .gel { --oil: mediumpurple }
+  .glow { --oil: #ee1 }
+  .gush { --oil: plum }
+  .lava { --oil: peru }
+  .orca { --oil: orchid }
+}
+
+@media (color) {
+  .wet * {
+    background-color: transparent;
+    color: inherit;
+  }
+
+  .wet :any-link { text-decoration: wavy overline }
+  .wet :focus { outline: thick double }
+  .wet ::selection {
+    background-color: rebeccapurple;
+    color: lemonchiffon;
+  }
+
+  .blood.blood {
+    background-color: var(--oil);
+    color: var(--ink);
+  }
+
+  .bleed.bleed {
+    background-color: var(--ink);
+    color: var(--oil);
+  }
+}
+
+@media (prefers-color-scheme:light) {
+  .bleed.blood {
+    background-color: var(--oil);
+    color: var(--ink);
+  }
+}
