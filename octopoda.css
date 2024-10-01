@@ -40,19 +40,22 @@ https://s9a.page/sea
 @media (color) {
   :root {
     --oil: honeydew;
-    --ink: #030209;
+    --ink: #050308;
   }
   .amber { --oil: lightsalmon }
   .blush { --oil: hotpink }
   .breeze { --oil: mistyrose }
+  .splash { --oil: skyblue }
   .foam { --oil: darkturquoise }
-  .fume { --oil: #d0e }
+  .fume { --oil: #d6e }
   .gel { --oil: mediumslateblue }
   .glow { --oil: #ec0 }
   .gush { --oil: violet }
   .lava { --oil: chocolate }
   .sand { --oil: navajowhite }
-  .storm { --oil: gainsboro }
+  .scent { --oil: #fbbfff }
+  .storm { --oil: #cdcdcd }
+  .swoon { --oil: blueviolet }
   .tide { --oil: deepskyblue }
   .orca { --oil: mediumorchid }
   .love { --oil: #bae }
@@ -61,17 +64,20 @@ https://s9a.page/sea
 @media (prefers-contrast: less) {
   .blush { --oil: lightpink }
   .breeze { --oil: bisque }
-  .fume { --oil: #c0d }
+  .fume { --oil: #e3d }
   .sand { --oil: peachpuff }
-  .storm { --oil: silver }
+  .scent { --oil: #ebbeee }
   .tide { --oil: dodgerblue }
   .amber { --oil: salmon }
+  .swoon { --oil: darkviolet }
 }
 
 @media (prefers-contrast: more) {
+  .splash { --oil: powderblue }
+  .storm { --oil: gainsboro }
   .foam { --oil: turquoise }
   .gel { --oil: mediumpurple }
-  .glow { --oil: #ee1 }
+  .glow { --oil: khaki }
   .gush { --oil: plum }
   .lava { --oil: peru }
   .orca { --oil: orchid }
